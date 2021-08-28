@@ -10,11 +10,11 @@ import Contact from 'components/modules/Contact';
 
 const HomePage = ({ repos }: { repos: RepositoryEdge[] }) => (
   <Layout>
-    <SEO />
-    <Intro />
-    <Projects data={repos} />
-    <Skills />
-    <Contact />
+    {/* <SEO />
+		<Intro />
+		<Projects data={repos} />
+		<Skills />
+		<Contact /> */}
   </Layout>
 );
 

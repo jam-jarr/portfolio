@@ -10,7 +10,7 @@ const Layout: FC = ({ children }) => {
     <>
       <GlobalStyle theme={theme} />
       {children}
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };
