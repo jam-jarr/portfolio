@@ -6,6 +6,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Roboto', Helvetica, sans-serif;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
+		font-size: 112.5%;
     article,
     aside,
     details,

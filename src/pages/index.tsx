@@ -2,7 +2,6 @@ import axios from 'axios';
 import { GetStaticProps } from 'next';
 import { RepositoryEdge } from 'generated/graphql';
 import Layout from 'components/ui/Layout';
-import SEO from 'components/SEO';
 import Intro from 'components/modules/Intro';
 import Projects from 'components/modules/Projects';
 import Skills from 'components/modules/Skills';
@@ -10,15 +9,12 @@ import Contact from 'components/modules/Contact';
 
 const HomePage = ({ repos }: { repos: RepositoryEdge[] }) => (
   <>
-    {false && (
-      <Layout>
-        <SEO />
-        <Intro />
-        <Projects data={repos} />
-        <Skills />
-        <Contact />
-      </Layout>
-    )}
+    <Layout>
+      <Intro />
+      <Projects data={repos} />
+      <Skills />
+      <Contact />
+    </Layout>
   </>
 );
 

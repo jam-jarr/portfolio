@@ -1,12 +1,13 @@
 import styled from 'styled-components';
 
 type WrapperProps = {
-  desktop?: boolean;
+	desktop?: boolean;
+	theme?: string;
 };
 
 export const Wrapper = styled.div<WrapperProps>`
   a {
-    color: #000;
+		color: ${({ theme }) => (theme === 'light' ? '#000' : '#fff')};
     text-decoration: none;
 
     @media (max-width: 960px) {
@@ -15,8 +16,8 @@ export const Wrapper = styled.div<WrapperProps>`
   }
 
   ${({ desktop }) =>
-    desktop
-      ? `
+		desktop
+			? `
 			align-items: center;
 			display: flex;
 
@@ -32,7 +33,7 @@ export const Wrapper = styled.div<WrapperProps>`
 					}
 			}
 		`
-      : `
+			: `
 			padding: 3rem;
 			display: flex;
 			flex-direction: column;
