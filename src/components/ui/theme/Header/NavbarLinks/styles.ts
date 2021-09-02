@@ -1,13 +1,13 @@
 import styled from 'styled-components';
 
 type WrapperProps = {
-	desktop?: boolean;
-	theme?: string;
+  desktop?: boolean;
+  theme?: string;
 };
 
 export const Wrapper = styled.div<WrapperProps>`
   a {
-		color: ${({ theme }) => (theme === 'light' ? '#000' : '#fff')};
+    color: ${({ theme }) => (theme === 'light' ? '#000' : '#fff')};
     text-decoration: none;
 
     @media (max-width: 960px) {
@@ -16,34 +16,34 @@ export const Wrapper = styled.div<WrapperProps>`
   }
 
   ${({ desktop }) =>
-		desktop
-			? `
-			align-items: center;
-			display: flex;
+    desktop
+      ? `
+      align-items: center;
+      display: flex;
 
-			@media (max-width: 960px) {
-					display: none;
-			}
+      @media (max-width: 960px) {
+          display: none;
+      }
 
-			a {
-					margin-right: 1rem;
+      a {
+          margin-right: 1rem;
 
-					&:last-child {
-							margin-right: unset;
-					}
-			}
-		`
-			: `
-			padding: 3rem;
-			display: flex;
-			flex-direction: column;
+          &:last-child {
+              margin-right: unset;
+          }
+      }
+    `
+      : `
+      padding: 3rem;
+      display: flex;
+      flex-direction: column;
 
-			a {
-					margin-bottom: 1rem;
+      a {
+          margin-bottom: 1rem;
 
-					&:last-child {
-							margin-bottom: unset;
-					}
-			}
-	`}
+          &:last-child {
+              margin-bottom: unset;
+          }
+      }
+  `}
 `;

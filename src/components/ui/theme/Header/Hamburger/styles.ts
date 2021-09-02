@@ -20,18 +20,18 @@ export const Wrapper = styled.div<WrapperProps>`
   ${({ sidebar }) =>
     sidebar &&
     `
-			right: 18%;
-			top: 1.4rem;
-		
-			@media (max-width: 960px) {
-				right: 35%;
-				position: fixed;
-			}
-		
-			@media (max-width: 600px) {
-				right: 66%;
-			}
-	`}
+      right: 18%;
+      top: 1.4rem;
+    
+      @media (max-width: 960px) {
+        right: 35%;
+        position: fixed;
+      }
+    
+      @media (max-width: 600px) {
+        right: 66%;
+      }
+  `}
 `;
 
 type BarProps = {
@@ -58,23 +58,23 @@ export const Bar = styled.div<BarProps>`
     top &&
     sidebar &&
     `
-		background-color: ${theme === 'light' ? '#212121' : '#fff'};
-		transform: translateY(8px) rotate(-135deg);
-		
-	`}
+    background-color: ${theme === 'light' ? '#212121' : '#fff'};
+    transform: translateY(8px) rotate(-135deg);
+    
+  `}
 
   ${({ mid, sidebar }) =>
     mid &&
     sidebar &&
     `
-		transform: scale(0);
-		`}
+    transform: scale(0);
+    `}
 
-	${({ bottom, sidebar, theme }) =>
+  ${({ bottom, sidebar, theme }) =>
     bottom &&
     sidebar &&
     `
-			background-color: ${theme === 'light' ? '#212121' : '#fff'};
-			transform: translateY(-6px) rotate(-45deg);
-	`}
+      background-color: ${theme === 'light' ? '#212121' : '#fff'};
+      transform: translateY(-6px) rotate(-45deg);
+  `}
 `;

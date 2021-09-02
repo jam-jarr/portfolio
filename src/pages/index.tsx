@@ -26,31 +26,31 @@ export const getStaticProps: GetStaticProps = async () => {
     method: 'post',
     data: {
       query: `
-				query viewer {
-					viewer {
-						repositories(first: 8, orderBy: {field: STARGAZERS, direction: DESC}) {
-							edges {
-								node {
-									id
-									name
-									url
-									description
-									stargazers {
-										totalCount
-									}
-									forkCount
-									languages(first: 3) {
-										nodes {
-											id
-											name
-										}
-									}
-								}
-							}
-						}
-					}
-				}
-			`,
+        query viewer {
+          viewer {
+            repositories(first: 8, orderBy: {field: STARGAZERS, direction: DESC}) {
+              edges {
+                node {
+                  id
+                  name
+                  url
+                  description
+                  stargazers {
+                    totalCount
+                  }
+                  forkCount
+                  languages(first: 3) {
+                    nodes {
+                      id
+                      name
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      `,
     },
     headers: {
       Authorization: `bearer ${process.env.GITHUB_TOKEN}`,

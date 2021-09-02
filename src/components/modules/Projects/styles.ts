@@ -60,13 +60,13 @@ export const Stats = styled.div<{ stars?: boolean }>`
     }
 
     ${({ stars, theme }) =>
-      stars &&
-      `
-			span {
-				color: ${theme === 'light' ? '#000' : '#fff'};
-				margin-left: 0.5rem;
-			}
-		`}
+    stars &&
+    `
+      span {
+        color: ${theme === 'light' ? '#000' : '#fff'};
+        margin-left: 0.5rem;
+      }
+    `}
   }
 `;
 
