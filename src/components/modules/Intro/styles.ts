@@ -28,11 +28,6 @@ export const Details = styled.div`
     font-size: 36pt;
     color: ${({ theme }) => (theme === 'light' ? '#22262a' : '#fff')};
 
-    @media (max-width: 960px) {
-      mix-blend-mode: ${({ theme }) =>
-    theme === 'light' ? 'unset' : 'difference'};
-    }
-
     @media (max-width: 680px) {
       font-size: 30pt;
     }
@@ -54,4 +49,11 @@ export const Details = styled.div`
     }
   }
 `;
+
+/*
+  media (max-width: 960px) {
+    mix-blend-mode: ${({ theme }) =>
+    theme === 'light' ? 'unset' : 'difference'};
+  }
+*/
 
