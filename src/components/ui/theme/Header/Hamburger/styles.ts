@@ -1,10 +1,6 @@
 import styled from 'styled-components';
 
-type WrapperProps = {
-  sidebar?: boolean;
-};
-
-export const Wrapper = styled.div<WrapperProps>`
+export const Wrapper = styled.div`
   z-index: 5;
   top: 1.6rem;
   right: 1.8rem;
@@ -16,22 +12,6 @@ export const Wrapper = styled.div<WrapperProps>`
   @media (max-width: 960px) {
     display: block;
   }
-
-  ${({ sidebar }) =>
-    sidebar &&
-    `
-      right: 18%;
-      top: 1.4rem;
-    
-      @media (max-width: 960px) {
-        right: 35%;
-        position: fixed;
-      }
-    
-      @media (max-width: 600px) {
-        right: 66%;
-      }
-  `}
 `;
 
 type BarProps = {
@@ -54,7 +34,7 @@ export const Bar = styled.div<BarProps>`
     width: 1.6rem;
   }
 
-  ${({ top, sidebar, theme }) =>
+  ${({ top, sidebar }) =>
     top &&
     sidebar &&
     `

@@ -17,13 +17,15 @@ export const Overlay = styled.div<OverlayProps>`
   background: rgba(0, 0, 0, 0.7);
   width: 100%;
   height: 100%;
+  visibility: hidden;
   opacity: 0;
   transition: 0.4s;
 
   ${({ sidebar }) =>
     sidebar &&
     `
-      opacity: 100;
+      opacity: 1;
+      visibility: visible;
       z-index: 4;  
   `}
 `;
