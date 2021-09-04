@@ -2,10 +2,6 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   padding-bottom: 4rem;
-  background-image: url('/assets/illustrations/overlay.svg');
-  background-size: contain;
-  background-position: right top;
-  background-repeat: no-repeat;
 `;
 
 export const IntroWrapper = styled.div`
@@ -59,14 +55,3 @@ export const Details = styled.div`
   }
 `;
 
-export const Thumbnail = styled.div`
-  flex: 1;
-
-  @media (max-width: 960px) {
-    width: 100%;
-  }
-
-  img {
-    width: 100%;
-  }
-`;
