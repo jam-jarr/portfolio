@@ -9,16 +9,16 @@ import 'components/ui/fonts.css';
 const MyApp = ({ Component, pageProps, err }: AppProps & { err: any }) => {
   const router = useRouter();
 
-  useEffect(() => {
-    const handleRouteChange = (url: string) => {
-      (window as any).gtag.pageview(url);
-    };
-    router.events.on('routeChangeComplete', handleRouteChange);
+  // useEffect(() => {
+  //   const handleRouteChange = (url: string) => {
+  //     (window as any).gtag.pageview(url);
+  //   };
+  //   router.events.on('routeChangeComplete', handleRouteChange);
 
-    return () => {
-      router.events.off('routeChangeComplete', handleRouteChange);
-    };
-  }, [router.events]);
+  //   return () => {
+  //     router.events.off('routeChangeComplete', handleRouteChange);
+  //   };
+  // }, [router.events]);
 
   return (
     <>
