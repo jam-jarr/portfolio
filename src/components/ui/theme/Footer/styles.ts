@@ -21,7 +21,7 @@ export const Details = styled.div`
 `;
 
 export const FooterItem = styled.div`
-  color: #40464f;
+  color: #727C8C;
   font-size: .9rem;
   padding: .3rem 1rem;
   text-align: center;

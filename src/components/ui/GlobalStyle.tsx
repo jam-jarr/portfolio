@@ -248,7 +248,7 @@ const GlobalStyle = createGlobalStyle`
       padding-top: 0;
       margin-bottom: 1.45rem;
       color: inherit;
-      font-weight: bold;
+      font-weight: normal;
       text-rendering: optimizeLegibility;
       font-size: 1.38316rem;
       line-height: 1.1;
@@ -506,15 +506,6 @@ const GlobalStyle = createGlobalStyle`
       margin-left: 1.45rem;
       margin-bottom: calc(1.45rem / 2);
       margin-top: calc(1.45rem / 2);
-    }
-    blockquote *:last-child {
-      margin-bottom: 0;
-    }
-    li *:last-child {
-      margin-bottom: 0;
-    }
-    p *:last-child {
-      margin-bottom: 0;
     }
     li > p {
       margin-bottom: calc(1.45rem / 2);

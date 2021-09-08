@@ -5,11 +5,7 @@ const Container = styled.div`
   margin: 0 auto;
   width: 90%;
 
-  @media (min-width: 601px) {
-    width: 90%;
-  }
-
-  @media (min-width: 993px) {
+  @media (min-width: 960px) {
     width: 80%;
   }
 `;
