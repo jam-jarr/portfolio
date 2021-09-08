@@ -1,10 +1,8 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.footer`
-  // position: absolute;
-  bottom: 0;
-  position: fixed;
   background-color: #17191c;
+  flex-shrink: 0;
   width: 100%;
 `;
 

@@ -2,6 +2,7 @@ import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
   html {
+    height: 100%;
     scroll-behavior: smooth;
     font-family: 'Roboto', Helvetica, sans-serif;
     -ms-text-size-adjust: 100%;
@@ -592,6 +593,7 @@ const GlobalStyle = createGlobalStyle`
       }
     }
     body {
+      height: 100%;
       margin: 0;
       padding: 0;
       font-family: 'Roboto', Helvetica, sans-serif;
@@ -605,6 +607,11 @@ const GlobalStyle = createGlobalStyle`
       -ms-font-feature-settings: 'kern', 'liga', 'clig', 'calt';
       -webkit-font-feature-settings: 'kern', 'liga', 'clig', 'calt';
       font-feature-settings: 'kern', 'liga', 'clig', 'calt';
+    }
+    body > div {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
     }
     a {
       text-decoration: none;
