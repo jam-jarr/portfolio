@@ -1,4 +1,4 @@
-import React, { createContext, useContext } from 'react';
+import { createContext, useContext } from 'react';
 import useDarkMode from 'hooks/useDarkMode';
 
 type ThemeState = {
@@ -10,7 +10,7 @@ type ThemeProviderProps = { children: React.ReactNode };
 
 export const ThemeContext = createContext<ThemeState>({
   theme: 'light',
-  setTheme: () => {}
+  setTheme: () => {},
 });
 
 const ThemeProvider = ({ children }: ThemeProviderProps) => {
@@ -20,7 +20,7 @@ const ThemeProvider = ({ children }: ThemeProviderProps) => {
     <ThemeContext.Provider
       value={{
         theme,
-        setTheme: toggleTheme
+        setTheme: toggleTheme,
       }}
     >
       {children}

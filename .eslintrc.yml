@@ -17,5 +17,6 @@ plugins:
   - '@typescript-eslint'
 rules: {
   "semi": ["error", "always"],
-  "comma-dangle": ["error", "always-multiline"]
+  "comma-dangle": ["error", "always-multiline"],
+  "no-undef": 'off'
 }
