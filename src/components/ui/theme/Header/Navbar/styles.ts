@@ -13,9 +13,7 @@ type BrandProps = {
 
 export const Brand = styled.a<BrandProps>`
   color: ${({ theme }) => (theme === 'light' ? '#000' : '#fff')};
-
-  @media (max-width: 960px) {
-    mix-blend-mode: ${({ theme }) =>
-      theme === 'light' ? 'unset' : 'difference'};
-  }
+  height: 45px;
+  width: 45px;
+  position: relative;
 `;
