@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 type ConditionalThemed = {
   show?: boolean;
@@ -25,8 +25,6 @@ export const Overlay = styled.div<ConditionalThemed>`
   `}
 `;
 
-
-
 export const Wrapper = styled.div<ConditionalThemed>`
   position: fixed;
   display: block;
@@ -44,7 +42,7 @@ export const Wrapper = styled.div<ConditionalThemed>`
     width: 85%;
     height: 85%;
   }
-`
+`;
 
 export const ProjectImage = styled.div`
   width: 40%;
@@ -58,11 +56,11 @@ export const ProjectImage = styled.div`
     width: 100%;
     height: 40%;
   }
-`
+`;
 
 export const Details = styled.div`
 padding: 15px;
-`
+`;
 
 export const DetailsWrapper = styled.div`
   @media (max-width: 1100px) {
@@ -71,7 +69,7 @@ export const DetailsWrapper = styled.div`
   width: 60%;
   display: inline-block;
   vertical-align: top;
-`
+`;
 
 export const Close = styled.div`
   position: fixed;
@@ -80,7 +78,7 @@ export const Close = styled.div`
   width: 2rem;
   height: 2rem;
   cursor: pointer;
-`
+`;
 
 export const Tag = styled.li`
   display: inline-block;
@@ -99,13 +97,13 @@ export const Tag = styled.li`
     line-height: normal;
     text-align: center;
   }
-`
+`;
 
 export const Tags = styled.ul`
   margin: 0;
   margin-bottom: 1.45rem;
   padding: 0;
-`
+`;
 
 export const About = styled.div`
   color: #94a4b4;
@@ -115,4 +113,4 @@ export const About = styled.div`
     color: white;
     margin-bottom: .8rem;
   }
-`
+`;

@@ -15,7 +15,7 @@ const Portfolio = () => {
   const { theme } = useTheme();
   const [modal, setModal] = useState<Modal>({
     project: null,
-    show: false
+    show: false,
   });
 
   const showModal = (project: ProjectData) => {

@@ -1,4 +1,4 @@
-import { ProjectData } from 'data/projectsData'
+import { ProjectData } from 'data/projectsData';
 import { Thumbnail } from '../Portfolio/styles';
 import { Close, Details, Overlay, ProjectImage, Wrapper, Tag, Tags, About, DetailsWrapper } from './styles';
 import closeIcon from 'assets/icons/close.svg';
@@ -11,7 +11,6 @@ type ModalProps = {
 }
 
 const ProjectModal = ({ project, onHide, show }: ModalProps) => {
-
   return (
     <Overlay show={show}>
       {show &&
@@ -44,6 +43,6 @@ const ProjectModal = ({ project, onHide, show }: ModalProps) => {
       }
     </Overlay>
   );
-}
+};
 
 export default ProjectModal;

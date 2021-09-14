@@ -56,4 +56,3 @@ export const Details = styled.div`
     theme === 'light' ? 'unset' : 'difference'};
   }
 */
-

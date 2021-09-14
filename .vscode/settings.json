@@ -1,7 +1,4 @@
 {
-  "editor.formatOnSave": true,
-  "prettier.tabWidth": 2,
-  "prettier.useTabs": true,
   "editor.tabSize": 2,
   "typescript.suggest.autoImports": true,
   "typescript.suggest.paths": true,

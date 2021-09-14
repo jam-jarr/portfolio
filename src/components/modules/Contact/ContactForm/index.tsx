@@ -28,7 +28,7 @@ const ContactForm = () => (
     })}
     onSubmit={async (
       { name, email, message },
-      { setSubmitting, resetForm, setFieldValue }
+      { setSubmitting, resetForm, setFieldValue },
     ) => {
       try {
         await axios({
@@ -110,7 +110,7 @@ const ContactForm = () => (
               />
               <ErrorMessage component={Error} name="recaptcha" />
             </InputField>
-          )}
+        )}
         {values.success && (
           <InputField>
             <Center>

@@ -34,4 +34,3 @@ export const FooterContact = styled.div`
 export const Link = styled.a`
   color: white;
 `;
-

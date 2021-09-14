@@ -8,7 +8,7 @@ export const Wrapper = styled.div`
     padding: unset;
     max-width: 85%;
   }
-`
+`;
 
 type DetailsProps = {
   theme?: string;
@@ -23,13 +23,13 @@ export const Details = styled.div<DetailsProps>`
     font-size: 32pt;
     color: ${({ theme }) => (theme === 'light' ? '#22262a' : '#fff')};
   }
-`
+`;
 
 export const Flex = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-`
+`;
 
 export const Item = styled.div`
   display: block;
@@ -48,7 +48,7 @@ export const Item = styled.div`
   @media (max-width: 960px) {
     width: 100%;
   }
-`
+`;
 
 export const Thumbnail = styled.div`
   div {
@@ -57,7 +57,7 @@ export const Thumbnail = styled.div`
   position: relative;
   width: 100%;
   height: 100%;
-`
+`;
 
 export const ViewProject = styled.div`
   position: absolute;
@@ -79,4 +79,4 @@ export const ViewProject = styled.div`
     box-shadow: inset 0 0 100px black;
     background: rgba(0, 0, 0, 0.2);
   }
-`
+`;

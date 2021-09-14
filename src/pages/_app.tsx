@@ -1,13 +1,11 @@
 import Script from 'next/script';
-import { useRouter } from 'next/router';
-import { useEffect } from 'react';
 import { AppProps } from 'next/app';
 import ThemeProvider from 'providers/ThemeProvider';
 import config from 'data/config';
 import 'components/ui/fonts.css';
 
 const MyApp = ({ Component, pageProps, err }: AppProps & { err: any }) => {
-  const router = useRouter();
+  // const router = useRouter();
 
   // useEffect(() => {
   //   const handleRouteChange = (url: string) => {
