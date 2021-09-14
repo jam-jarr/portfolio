@@ -9,6 +9,8 @@ export type ProjectData = {
   desc: string;
   title: string;
   tags: string[];
+  codeLink: string;
+  demoLink: string;
 }
 
 const data: ProjectData[] = [
@@ -19,6 +21,8 @@ const data: ProjectData[] = [
     desc: 'three',
     title: '',
     tags: ['one', 'two'],
+    codeLink: 'https://github.com/realGiB/fourier-series-from-path',
+    demoLink: 'https://fourier-series-from-path.vercel.app/',
   },
   {
     id: 1,
@@ -27,6 +31,8 @@ const data: ProjectData[] = [
     desc: 'This project was ',
     title: 'Personal Discord Bot',
     tags: ['javascript', 'node', 'DISCORD.JS'],
+    codeLink: '',
+    demoLink: '',
   },
   {
     id: 2,
@@ -35,6 +41,8 @@ const data: ProjectData[] = [
     desc: 'two',
     title: '',
     tags: ['one', 'two'],
+    codeLink: '',
+    demoLink: '',
   },
 ];
 export default data;

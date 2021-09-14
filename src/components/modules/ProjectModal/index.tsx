@@ -1,5 +1,5 @@
 import { ProjectData } from 'data/projectsData';
-import { Close, Details, Overlay, ProjectImage, Wrapper, Tag, Tags, About, DetailsWrapper, StyledButton, Buttons, ButtonsWrapper, Thumbnail } from './styles';
+import { Close, Details, Overlay, ProjectImage, Wrapper, Tag, Tags, About, DetailsWrapper, StyledButton, Buttons, ButtonsWrapper, Thumbnail, Link } from './styles';
 import closeIcon from 'assets/icons/close.svg';
 import ViewCode from 'components/ui/Icons/ViewCode';
 import Image from 'next/image';
@@ -24,11 +24,11 @@ const ProjectModal = ({ project, onHide, show }: ModalProps) => {
               <Buttons>
                 <StyledButton>
                   <ViewCode />
-                  CODE
+                  <Link href={project!.codeLink} rel="noopener noreferrer" target="_blank">CODE</Link>
                 </StyledButton>
                 <StyledButton>
                   <DemoIcon />
-                  DEMO
+                  <Link href={project!.demoLink} rel="noopener noreferrer" target="_blank">DEMO</Link>
                 </StyledButton>
               </Buttons>
             </ButtonsWrapper>
