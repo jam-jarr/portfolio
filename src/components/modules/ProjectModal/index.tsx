@@ -1,8 +1,9 @@
 import { ProjectData } from 'data/projectsData';
-import { Thumbnail } from '../Portfolio/styles';
-import { Close, Details, Overlay, ProjectImage, Wrapper, Tag, Tags, About, DetailsWrapper } from './styles';
+import { Close, Details, Overlay, ProjectImage, Wrapper, Tag, Tags, About, DetailsWrapper, StyledButton, Buttons, ButtonsWrapper, Thumbnail } from './styles';
 import closeIcon from 'assets/icons/close.svg';
+import ViewCode from 'components/ui/Icons/ViewCode';
 import Image from 'next/image';
+import DemoIcon from 'components/ui/Icons/DemoIcon';
 
 type ModalProps = {
   project: ProjectData | null;
@@ -19,6 +20,18 @@ const ProjectModal = ({ project, onHide, show }: ModalProps) => {
             <Thumbnail>
               <Image layout="fill" objectFit="contain" src={project!.imageSrc} alt={project!.imageAlt} />
             </Thumbnail>
+            <ButtonsWrapper>
+              <Buttons>
+                <StyledButton>
+                  <ViewCode />
+                  CODE
+                </StyledButton>
+                <StyledButton>
+                  <DemoIcon />
+                  DEMO
+                </StyledButton>
+              </Buttons>
+            </ButtonsWrapper>
           </ProjectImage>
           <DetailsWrapper>
             <Details>
