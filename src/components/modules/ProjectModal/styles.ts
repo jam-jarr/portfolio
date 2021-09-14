@@ -37,6 +37,7 @@ export const Wrapper = styled.div<ConditionalThemed>`
   height: 370px;
   visibility: ${({ show }) => (show ? 'visible' : 'hidden')};
   transition: all 0.2s;
+  border-radius: 50px;
 
   @media (max-width: 1100px) {
     width: 85%;
@@ -51,6 +52,7 @@ export const ProjectImage = styled.div`
   margin: 0;
   padding: 0;
   display: inline-block;
+  border-radius: inherit;
 
   @media (max-width: 1100px) {
     width: 100%;

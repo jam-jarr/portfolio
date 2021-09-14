@@ -10,13 +10,13 @@ const Footer = () => (
         <FooterContact>
           <FooterItem>
             Email:&nbsp;
-            <Link href='mailto:gabriel.giarratana@gmail.com'>
+            <Link href='mailto:gabriel.giarratana@gmail.com' rel="noopener noreferrer" target="_blank">
               gabriel.giarratana@gmail.com
             </Link>
           </FooterItem>
           <FooterItem>
             Phone:&nbsp;
-            <Link href='tel:+14792492441'>
+            <Link href='tel:+14792492441' rel="noopener noreferrer" target="_blank">
               +1 (479) 249-2441
             </Link>
           </FooterItem>

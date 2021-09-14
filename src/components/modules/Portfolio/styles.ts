@@ -42,8 +42,11 @@ export const Item = styled.div`
   height: 100vh;
   transition: all 0.3s;
   background: #222327;
+  border-radius: 20px;
+  
   &:hover {
     transform: scale(1.1);
+    border-radius: 60px;
   }
   @media (max-width: 960px) {
     width: 100%;
@@ -66,13 +69,15 @@ export const ViewProject = styled.div`
   justify-content: center;
   height: 100%;
   width: 100%;
-  transition: all 0.2s;
+  transition: all 0.3s;
   left: 0;
   top: 0;
   cursor: pointer;
   opacity: 0;
   font-size: 1rem;
   user-select: none;
+  border-radius: inherit;
+
   &:hover {
     font-size: 1.5rem;
     opacity: 1;

@@ -13,7 +13,7 @@ type ModalProps = {
 
 const ProjectModal = ({ project, onHide, show }: ModalProps) => {
   return (
-    <Overlay show={show}>
+    <Overlay show={show} onClick={onHide}>
       {show &&
         <Wrapper show={show}>
           <ProjectImage>
