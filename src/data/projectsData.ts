@@ -13,6 +13,14 @@ export type ProjectData = {
 
 const data: ProjectData[] = [
   {
+    id: 3,
+    imageSrc: FourierSeries,
+    imageAlt: 'Fourier Series Logo',
+    desc: 'three',
+    title: '',
+    tags: ['one', 'two'],
+  },
+  {
     id: 1,
     imageSrc: DiscordBotLogo,
     imageAlt: 'Discord Bot Logo',
@@ -25,14 +33,6 @@ const data: ProjectData[] = [
     imageSrc: LedControlLogo,
     imageAlt: 'Led Control Logo',
     desc: 'two',
-    title: '',
-    tags: ['one', 'two'],
-  },
-  {
-    id: 3,
-    imageSrc: FourierSeries,
-    imageAlt: 'Fourier Series Logo',
-    desc: 'three',
     title: '',
     tags: ['one', 'two'],
   },

@@ -34,7 +34,7 @@ export const Wrapper = styled.div<ConditionalThemed>`
   top: 50%;
   transform: translate(-50%, -50%);
   width: 1000px;
-  height: 40%;
+  height: 370px;
   visibility: ${({ show }) => (show ? 'visible' : 'hidden')};
   transition: all 0.2s;
 
@@ -113,4 +113,42 @@ export const About = styled.div`
     color: white;
     margin-bottom: .8rem;
   }
+`;
+
+export const StyledButton = styled.button`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background: '#fff';
+  color: '#000';
+  padding: 0.15rem 0.65rem;
+  font-family: "AzeretMono";
+  border: 0;
+  border-radius: 3px;
+  margin: 0 15px;
+`;
+
+export const Buttons = styled.div`
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  margin: 0 auto;
+  bottom: 10px;
+`;
+
+export const ButtonsWrapper = styled.div`
+  position: relative;
+  display: flex;
+  justify-content: center;
+`;
+
+export const Thumbnail = styled.div`
+  div {
+    margin: 45px !important;
+  }
+  position: relative;
+  width: 100%;
+  height: 100%;
 `;
