@@ -25,6 +25,7 @@ const MyApp = ({ Component, pageProps, err }: AppProps & { err: any }) => {
         src={`https://www.googletagmanager.com/gtag/js?id=${config.googleAnalyticsID}`}
       ></Script>
       <Script
+        id="gtag"
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: `
