@@ -23,7 +23,8 @@ const Button = styled.button<ButtonProps>`
   ${({ secondary }) =>
     secondary &&
     `
-    background: #001F3F;
+    background: white;
+    color: #0074d9;
   `}
 `;
 

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 type ConditionalThemed = {
   show?: boolean;
   theme?: string;
-}
+};
 
 export const Overlay = styled.div<ConditionalThemed>`
   position: fixed;
@@ -29,7 +29,7 @@ export const Wrapper = styled.div<ConditionalThemed>`
   position: fixed;
   display: block;
   box-shadow: 0 0 10px black;
-  background: #32363D;
+  background: #32363d;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -38,7 +38,6 @@ export const Wrapper = styled.div<ConditionalThemed>`
   visibility: ${({ show }) => (show ? 'visible' : 'hidden')};
   transition: all 0.2s;
   border-radius: 50px;
-
   @media (max-width: 1100px) {
     width: 85%;
     height: 85%;
@@ -61,7 +60,7 @@ export const ProjectImage = styled.div`
 `;
 
 export const Details = styled.div`
-padding: 15px;
+  padding: 15px;
 `;
 
 export const DetailsWrapper = styled.div`
@@ -84,15 +83,15 @@ export const Close = styled.div`
 
 export const Tag = styled.li`
   display: inline-block;
-  margin: .5rem;
+  margin: 0.5rem;
   border: 1px solid #94a4b4;
-  padding: .3rem;
+  padding: 0.3rem;
   color: #94a4b4;
   font-weight: normal;
   letter-spacing: 1px;
-  font-size: .8rem;
+  font-size: 0.8rem;
   text-align: center;
-  font-family: 'AzeretMono';
+  font-family: "AzeretMono";
   font-style: italic;
   span {
     vertical-align: middle;
@@ -113,7 +112,7 @@ export const About = styled.div`
   height: auto;
   h3 {
     color: white;
-    margin-bottom: .8rem;
+    margin-bottom: 0.8rem;
   }
 `;
 
@@ -122,13 +121,17 @@ export const StyledButton = styled.button`
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  background: '#fff';
-  color: '#000';
+  background: "#fff";
+  color: "#000";
   padding: 0.15rem 0.65rem;
   font-family: "AzeretMono";
   border: 0;
   border-radius: 3px;
   margin: 0 15px;
+
+  &:disabled {
+    pointer-events: none;
+  }
 `;
 
 export const Buttons = styled.div`

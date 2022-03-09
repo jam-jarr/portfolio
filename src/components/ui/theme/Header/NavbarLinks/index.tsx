@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { useTheme } from 'providers/ThemeProvider';
-import ToggleTheme from '..//ToggleTheme';
+// import ToggleTheme from '..//ToggleTheme';
 import { Wrapper } from './styles';
 
 type NavbarLinksProps = {
@@ -21,7 +21,7 @@ const NavbarLinks = ({ desktop }: NavbarLinksProps) => {
       <Link href="#contact">
         <a>Contact</a>
       </Link>
-      <ToggleTheme />
+      {/* <ToggleTheme /> */}
     </Wrapper>
   );
 };

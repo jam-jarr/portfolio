@@ -12,9 +12,18 @@ const Intro = () => {
       <IntroWrapper as={Container}>
         <Details theme={theme}>
           <h1>I’m Gabe and I’m a Software Developer!</h1>
-          <Link href="/projects" passHref>
-            <Button as="a">View Projects</Button>
-          </Link>
+          <div>
+            <Link href="/projects" passHref>
+              <Button as="a" style={{ marginRight: '1rem' }}>
+                View Projects
+              </Button>
+            </Link>
+            <Link href="https://resume.realgib.com" passHref>
+              <Button as="a" target="_blank" secondary>
+                View Resume
+              </Button>
+            </Link>
+          </div>
         </Details>
       </IntroWrapper>
     </Wrapper>

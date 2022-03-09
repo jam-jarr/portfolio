@@ -4,7 +4,7 @@ import Container from 'components/ui/Container';
 import NavbarLinks from '../NavbarLinks';
 import { Wrapper, Brand } from './styles';
 import Image from 'next/image';
-import intitials from 'assets/icons/initials-split.svg';
+import initials from 'assets/icons/initials-split.svg';
 
 const Navbar = () => {
   const { theme } = useTheme();
@@ -13,7 +13,7 @@ const Navbar = () => {
     <Wrapper as={Container}>
       <Link href="/" passHref>
         <Brand as="a" theme={theme}>
-          <Image src={intitials} alt="GG" layout="fill" objectFit="fill" />
+          <Image src={initials} alt="GG" layout="fill" objectFit="fill" />
         </Brand>
       </Link>
       <NavbarLinks desktop />
