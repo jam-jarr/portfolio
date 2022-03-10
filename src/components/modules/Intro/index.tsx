@@ -1,8 +1,7 @@
 import Link from 'next/link';
 import { useTheme } from 'providers/ThemeProvider';
-import Button from 'components/ui/Button';
 import Container from 'components/ui/Container';
-import { Wrapper, IntroWrapper, Details } from './styles';
+import { Wrapper, IntroWrapper, Details, Buttons, FlexButton } from './styles';
 
 const Intro = () => {
   const { theme } = useTheme();
@@ -12,18 +11,18 @@ const Intro = () => {
       <IntroWrapper as={Container}>
         <Details theme={theme}>
           <h1>I’m Gabe and I’m a Software Developer!</h1>
-          <div>
+          <Buttons>
             <Link href="/projects" passHref>
-              <Button as="a" style={{ marginRight: '1rem' }}>
+              <FlexButton as="a">
                 View Projects
-              </Button>
+              </FlexButton>
             </Link>
             <Link href="https://resume.realgib.com" passHref>
-              <Button as="a" target="_blank" secondary>
+              <FlexButton as="a" target="_blank" secondary>
                 View Resume
-              </Button>
+              </FlexButton>
             </Link>
-          </div>
+          </Buttons>
         </Details>
       </IntroWrapper>
     </Wrapper>

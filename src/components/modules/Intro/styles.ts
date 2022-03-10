@@ -1,3 +1,4 @@
+import Button from 'components/ui/Button';
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
@@ -48,6 +49,21 @@ export const Details = styled.div`
       font-size: 26pt;
     }
   }
+`;
+
+export const Buttons = styled.div`
+  display: flex;
+
+  @media (max-width: 480px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+`;
+
+export const FlexButton = styled(Button)`
+  margin-bottom: 1rem;
+  margin-right: 1rem;
 `;
 
 /*
