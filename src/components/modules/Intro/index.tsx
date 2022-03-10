@@ -17,8 +17,8 @@ const Intro = () => {
                 View Projects
               </FlexButton>
             </Link>
-            <Link href="https://resume.realgib.com" passHref>
-              <FlexButton as="a" target="_blank" secondary>
+            <Link href='/assets/files/Resume.pdf' passHref>
+              <FlexButton as="a" target="_blank" download secondary>
                 View Resume
               </FlexButton>
             </Link>
