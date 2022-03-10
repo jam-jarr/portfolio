@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Scrollbars } from 'react-custom-scrollbars-2';
 
 type ConditionalThemed = {
   show?: boolean;
@@ -64,17 +65,26 @@ export const Details = styled.div`
 `;
 
 export const DetailsWrapper = styled.div`
-  @media (max-width: 1100px) {
-    width: 100%;
-    height: 55%;
-  }
-  height: 100%;
-  width: 60%;
   display: inline-block;
   vertical-align: top;
   box-sizing: border-box;
-  overflow-y: scroll;
   padding: 15px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+`;
+
+export const StyledScrollBars = styled(Scrollbars)`
+  @media (max-width: 1100px) {
+    width: 100% !important;
+    height: 55% !important;
+    float: none;
+  }
+  height: 100% !important;
+  width: 60% !important;
+  float: right;
 `;
 
 export const Close = styled.div`
