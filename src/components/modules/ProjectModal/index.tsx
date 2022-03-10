@@ -77,7 +77,7 @@ const ProjectModal = ({ project, onHide, show }: ModalProps) => {
               </Tags>
               <About>
                 <h3>About</h3>
-                {project!.desc}
+                <p>{project!.desc}</p>
               </About>
             </Details>
           </DetailsWrapper>

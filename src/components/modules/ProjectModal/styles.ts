@@ -60,16 +60,21 @@ export const ProjectImage = styled.div`
 `;
 
 export const Details = styled.div`
-  padding: 15px;
+  box-sizing: inherit;
 `;
 
 export const DetailsWrapper = styled.div`
   @media (max-width: 1100px) {
     width: 100%;
+    height: 55%;
   }
+  height: 100%;
   width: 60%;
   display: inline-block;
   vertical-align: top;
+  box-sizing: border-box;
+  overflow-y: scroll;
+  padding: 15px;
 `;
 
 export const Close = styled.div`
@@ -102,13 +107,12 @@ export const Tag = styled.li`
 
 export const Tags = styled.ul`
   margin: 0;
-  margin-bottom: 1.45rem;
+  margin-bottom: 1rem;
   padding: 0;
 `;
 
 export const About = styled.div`
   color: #94a4b4;
-  overflow-y: auto;
   height: auto;
   h3 {
     color: white;
