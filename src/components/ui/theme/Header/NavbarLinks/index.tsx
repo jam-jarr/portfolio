@@ -12,14 +12,14 @@ const NavbarLinks = ({ desktop }: NavbarLinksProps) => {
 
   return (
     <Wrapper desktop={desktop} theme={theme}>
-      <Link href="#about">
-        <a>About</a>
+      <Link href="/">
+        <a>Home</a>
       </Link>
-      <Link href="#projects">
+      <Link href="/projects">
         <a>Projects</a>
       </Link>
-      <Link href="#contact">
-        <a>Contact</a>
+      <Link href="https://resume.realgib.com">
+        <a target='_blank'>Resume</a>
       </Link>
       {/* <ToggleTheme /> */}
     </Wrapper>

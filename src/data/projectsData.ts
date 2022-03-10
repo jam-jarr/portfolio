@@ -39,11 +39,11 @@ const data: ProjectData[] = [
     id: 2,
     imageSrc: LedControlLogo,
     imageAlt: 'Led Control Logo',
-    desc: 'This project was both a website and a server/microcontroller for me to drive a RGB LED strip through a raspberry pi. The website and raspberry pi communicated through the HTTP protocol. This is the website end of the project.',
+    desc: 'This project was both a website and a server/microcontroller for me to drive a RGB LED strip through a raspberry pi. The website and raspberry pi communicated through the HTTP protocol. This is the website end of the project. No, you cant control my strip from the demo 🤭',
     title: 'Led Strip Controller',
     tags: ['python', 'Vue', 'linux', 'html', 'css', 'js', 'http'],
     codeLink: 'https://github.com/realGiB/led-control-vue',
-    demoLink: '',
+    demoLink: 'https://led-control-vue.vercel.app/',
   },
   {
     id: 4,
@@ -52,7 +52,7 @@ const data: ProjectData[] = [
     desc: 'My personal website to display my portfolio. Welcome!',
     title: 'Portfolio Website',
     tags: ['React', 'node', 'next', 'html', 'css', 'js'],
-    codeLink: '',
+    codeLink: 'https://github.com/realGiB/portfolio',
     demoLink: 'https://realgib.com',
   },
 ];
