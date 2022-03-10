@@ -49,7 +49,7 @@ const data: ProjectData[] = [
     id: 4,
     imageSrc: Initials,
     imageAlt: 'Website Logo',
-    desc: 'My personal website to display my portfolio. Welcome!',
+    desc: 'My personal website to display my portfolio. Built to be responsive, adaptable, and bold. Welcome!',
     title: 'Portfolio Website',
     tags: ['React', 'node', 'next', 'html', 'css', 'js'],
     codeLink: 'https://github.com/realGiB/portfolio',
