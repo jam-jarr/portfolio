@@ -3,21 +3,10 @@ import { AppProps } from 'next/app';
 import ThemeProvider from 'providers/ThemeProvider';
 import config from 'data/config';
 import 'components/ui/fonts.css';
+import { DefaultSeo } from 'next-seo';
+import SEO from 'data/next-seo.config';
 
 const MyApp = ({ Component, pageProps, err }: AppProps & { err: any }) => {
-  // const router = useRouter();
-
-  // useEffect(() => {
-  //   const handleRouteChange = (url: string) => {
-  //     (window as any).gtag.pageview(url);
-  //   };
-  //   router.events.on('routeChangeComplete', handleRouteChange);
-
-  //   return () => {
-  //     router.events.off('routeChangeComplete', handleRouteChange);
-  //   };
-  // }, [router.events]);
-
   return (
     <>
       <Script
@@ -39,6 +28,7 @@ const MyApp = ({ Component, pageProps, err }: AppProps & { err: any }) => {
         }}
       />
       <ThemeProvider>
+        <DefaultSeo {...SEO}/>
         <Component {...pageProps} err={err} />
       </ThemeProvider>
     </>
