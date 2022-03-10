@@ -26,16 +26,6 @@ const data: ProjectData[] = [
     demoLink: 'https://fourier-series-from-path.vercel.app/',
   },
   {
-    id: 1,
-    imageSrc: DiscordBotLogo,
-    imageAlt: 'Discord Bot Logo',
-    desc: "A discord moderation and meme bot designed for personal use. I made this because there weren't any bots available that did what I needed them to.",
-    title: 'Personal Discord Bot',
-    tags: ['js', 'node', 'DISCORD.JS'],
-    codeLink: 'https://github.com/realGiB/yeet-discord-bot',
-    demoLink: '',
-  },
-  {
     id: 2,
     imageSrc: LedControlLogo,
     imageAlt: 'Led Control Logo',
@@ -44,6 +34,16 @@ const data: ProjectData[] = [
     tags: ['python', 'Vue', 'linux', 'html', 'css', 'js', 'http'],
     codeLink: 'https://github.com/realGiB/led-control-vue',
     demoLink: 'https://led-control-vue.vercel.app/',
+  },
+  {
+    id: 1,
+    imageSrc: DiscordBotLogo,
+    imageAlt: 'Discord Bot Logo',
+    desc: "A discord moderation and meme bot designed for personal use. I made this because there weren't any bots available that did what I needed them to.",
+    title: 'Personal Discord Bot',
+    tags: ['js', 'node', 'DISCORD.JS'],
+    codeLink: 'https://github.com/realGiB/yeet-discord-bot',
+    demoLink: '',
   },
   {
     id: 4,
