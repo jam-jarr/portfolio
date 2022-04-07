@@ -1,4 +1,3 @@
-import { useTheme } from 'providers/ThemeProvider';
 import { Wrapper, Bar } from './styles';
 
 type HamburgerProps = {
@@ -7,13 +6,11 @@ type HamburgerProps = {
 };
 
 const Hamburger = ({ sidebar, toggle }: HamburgerProps) => {
-  const { theme } = useTheme();
-
   return (
     <Wrapper onClick={() => toggle(!sidebar)}>
-      <Bar top sidebar={sidebar} theme={theme} />
-      <Bar mid sidebar={sidebar} theme={theme} />
-      <Bar bottom sidebar={sidebar} theme={theme} />
+      <Bar top sidebar={sidebar} />
+      <Bar mid sidebar={sidebar} />
+      <Bar bottom sidebar={sidebar} />
     </Wrapper>
   );
 };

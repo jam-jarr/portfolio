@@ -27,7 +27,7 @@ export const Details = styled.div`
   h1 {
     margin-bottom: 2rem;
     font-size: 36pt;
-    color: ${({ theme }) => (theme === 'light' ? '#22262a' : '#fff')};
+    color: #fff;
 
     @media (max-width: 680px) {
       font-size: 30pt;
@@ -38,12 +38,7 @@ export const Details = styled.div`
     margin-bottom: 2.5rem;
     font-size: 32pt;
     font-weight: normal;
-    color: ${({ theme }) => (theme === 'light' ? '#707070' : '#e6e6e6')};
-
-    @media (max-width: 960px) {
-      mix-blend-mode: ${({ theme }) =>
-    theme === 'light' ? 'unset' : 'difference'};
-    }
+    color: #e6e6e6;
 
     @media (max-width: 680px) {
       font-size: 26pt;
@@ -65,10 +60,3 @@ export const FlexButton = styled(Button)`
   margin-bottom: 1rem;
   margin-right: 1rem;
 `;
-
-/*
-  media (max-width: 960px) {
-    mix-blend-mode: ${({ theme }) =>
-    theme === 'light' ? 'unset' : 'difference'};
-  }
-*/

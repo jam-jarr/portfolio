@@ -1,6 +1,4 @@
 import Link from 'next/link';
-import { useTheme } from 'providers/ThemeProvider';
-// import ToggleTheme from '..//ToggleTheme';
 import { Wrapper } from './styles';
 
 type NavbarLinksProps = {
@@ -8,10 +6,8 @@ type NavbarLinksProps = {
 };
 
 const NavbarLinks = ({ desktop }: NavbarLinksProps) => {
-  const { theme } = useTheme();
-
   return (
-    <Wrapper desktop={desktop} theme={theme}>
+    <Wrapper desktop={desktop} >
       <Link href="/">
         <a>Home</a>
       </Link>
@@ -21,7 +17,6 @@ const NavbarLinks = ({ desktop }: NavbarLinksProps) => {
       <Link href="https://resume.realgib.com">
         <a target='_blank'>Resume</a>
       </Link>
-      {/* <ToggleTheme /> */}
     </Wrapper>
   );
 };

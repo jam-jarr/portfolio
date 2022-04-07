@@ -7,12 +7,8 @@ export const Wrapper = styled.div`
   justify-content: space-between;
 `;
 
-type BrandProps = {
-  theme?: string;
-};
-
-export const Brand = styled.a<BrandProps>`
-  color: ${({ theme }) => (theme === 'light' ? '#000' : '#fff')};
+export const Brand = styled.a`
+  color: #fff;
   height: 45px;
   width: 45px;
   position: relative;

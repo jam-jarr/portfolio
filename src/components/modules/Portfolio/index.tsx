@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import Container from 'components/ui/Container';
-import { useTheme } from 'providers/ThemeProvider';
 import data, { ProjectData } from 'data/projectsData';
 import Image from 'next/image';
 import { Wrapper, Details, Flex, Item, Thumbnail, ViewProject } from './styles';
@@ -12,7 +11,6 @@ type Modal = {
 }
 
 const Portfolio = () => {
-  const { theme } = useTheme();
   const [modal, setModal] = useState<Modal>({
     project: null,
     show: false,
@@ -34,7 +32,7 @@ const Portfolio = () => {
 
   return (
     <Wrapper as={Container}>
-      <Details theme={theme}>
+      <Details>
         <h1>Portfolio</h1>
         <h3>{'// Here are some of my favorite projects!'}</h3>
         <Flex>

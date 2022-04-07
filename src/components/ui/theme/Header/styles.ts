@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-  background: ${({ theme }) => (theme === 'light' ? '#fff' : '#22262a')};
+  background: #22262a;
   width: 100%;
   position: sticky;
   z-index: 1;

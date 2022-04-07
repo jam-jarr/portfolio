@@ -10,18 +10,14 @@ export const Wrapper = styled.div`
   }
 `;
 
-type DetailsProps = {
-  theme?: string;
-}
-
-export const Details = styled.div<DetailsProps>`
+export const Details = styled.div`
   flex: 1;
   padding: 2rem;
   padding-bottom: 0;
   margin: auto;
   h1 {
     font-size: 32pt;
-    color: ${({ theme }) => (theme === 'light' ? '#22262a' : '#fff')};
+    color: #fff;
   }
 `;
 

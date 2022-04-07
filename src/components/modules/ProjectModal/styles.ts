@@ -1,12 +1,11 @@
 import styled from 'styled-components';
 import { Scrollbars } from 'react-custom-scrollbars-2';
 
-type ConditionalThemed = {
+type Conditional = {
   show?: boolean;
-  theme?: string;
 };
 
-export const Overlay = styled.div<ConditionalThemed>`
+export const Overlay = styled.div<Conditional>`
   position: fixed;
   background: rgba(0, 0, 0, 0.7);
   width: 100%;
@@ -26,7 +25,7 @@ export const Overlay = styled.div<ConditionalThemed>`
   `}
 `;
 
-export const Wrapper = styled.div<ConditionalThemed>`
+export const Wrapper = styled.div<Conditional>`
   position: fixed;
   display: block;
   box-shadow: 0 0 10px black;

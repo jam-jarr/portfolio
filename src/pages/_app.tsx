@@ -1,6 +1,5 @@
 import Script from 'next/script';
 import { AppProps } from 'next/app';
-import ThemeProvider from 'providers/ThemeProvider';
 import config from 'data/config';
 import 'components/ui/fonts.css';
 import { DefaultSeo } from 'next-seo';
@@ -27,10 +26,8 @@ const MyApp = ({ Component, pageProps, err }: AppProps & { err: any }) => {
           `,
         }}
       />
-      <ThemeProvider>
         <DefaultSeo {...SEO}/>
         <Component {...pageProps} err={err} />
-      </ThemeProvider>
     </>
   );
 };
