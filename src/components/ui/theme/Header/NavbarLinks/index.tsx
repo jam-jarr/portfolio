@@ -14,8 +14,8 @@ const NavbarLinks = ({ desktop }: NavbarLinksProps) => {
       <Link href="/projects">
         <a>Projects</a>
       </Link>
-      <Link href="https://resume.realgib.com">
-        <a target='_blank'>Resume</a>
+      <Link href="/assets/files/Resume.pdf" passHref>
+        <a target='_blank' download>Resume</a>
       </Link>
     </Wrapper>
   );
