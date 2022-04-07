@@ -39,6 +39,11 @@ class MyDocument extends Document {
           <meta name="msapplication-TileColor" content="#da532c" />
           <meta name="msapplication-config" content="/assets/favicon/browserconfig.xml" />
           <meta name="theme-color" content="#6b63ff" />
+          <style>{`
+            html {
+              background-color: #22262a;
+            }`}
+          </style>
         </Head>
         <body>
           <Main />
