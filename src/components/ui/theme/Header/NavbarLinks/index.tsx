@@ -7,16 +7,16 @@ type NavbarLinksProps = {
 
 const NavbarLinks = ({ desktop }: NavbarLinksProps) => {
   return (
-    <Wrapper desktop={desktop} >
+    <Wrapper desktop={desktop}>
       <Link href="/">
         <a>Home</a>
       </Link>
       <Link href="/projects">
         <a>Projects</a>
       </Link>
-      <Link href="/assets/files/Resume.pdf" passHref>
-        <a target='_blank' download>Resume</a>
-      </Link>
+      <a href="/assets/files/Resume.pdf" target="_blank" download>
+        Resume
+      </a>
     </Wrapper>
   );
 };

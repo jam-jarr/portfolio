@@ -15,13 +15,13 @@ export const Flex = styled.div`
 `;
 
 export const Details = styled.div`
-  font-family: 'Inconsolata',sans-serif;
+  font-family: "Inconsolata", sans-serif;
 `;
 
 export const FooterItem = styled.div`
-  color: #727C8C;
-  font-size: .9rem;
-  padding: .3rem 1rem;
+  color: #727c8c;
+  font-size: 0.9rem;
+  padding: 0.3rem 1rem;
   text-align: center;
 `;
 
@@ -31,6 +31,6 @@ export const FooterContact = styled.div`
   justify-content: center;
 `;
 
-export const Link = styled.a`
+export const Contacts = styled.a`
   color: white;
 `;

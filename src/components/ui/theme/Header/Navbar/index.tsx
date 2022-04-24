@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <Wrapper as={Container}>
       <Link href="/" passHref>
-        <Brand as="a" >
+        <Brand>
           <Image src={initials} alt="GG" layout="fill" objectFit="fill" />
         </Brand>
       </Link>
