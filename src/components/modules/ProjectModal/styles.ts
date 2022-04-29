@@ -129,24 +129,6 @@ export const About = styled.div`
   }
 `;
 
-export const StyledButton = styled.button`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  background: "#fff";
-  color: "#000";
-  padding: 0.15rem 0.65rem;
-  font-family: "AzeretMono";
-  border: 0;
-  border-radius: 3px;
-  margin: 0 15px;
-
-  &:disabled {
-    pointer-events: none;
-  }
-`;
-
 export const Buttons = styled.div`
   position: absolute;
   display: flex;
@@ -173,4 +155,27 @@ export const Thumbnail = styled.div`
 
 export const Link = styled.a`
   color: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.15rem 0.65rem;
+`;
+
+export const StyledButton = styled.button`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #efefef;
+  color: #111;
+  font-family: "AzeretMono";
+  border: 0;
+  border-radius: 3px;
+  margin: 0 15px;
+  padding: 0;
+
+  &:disabled {
+    pointer-events: none;
+    background-color: rgba(239, 239, 239, 0.3);
+    color: rgba(16, 16, 16, 0.3);
+  }
 `;

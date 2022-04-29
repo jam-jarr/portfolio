@@ -72,22 +72,22 @@ const ProjectModal = ({ project, onHide, show }: ModalProps) => {
             <ButtonsWrapper>
               <Buttons>
                 <StyledButton disabled={!project!.codeLink}>
-                  <ViewCode />
                   <Link
                     href={project!.codeLink}
                     rel="noopener noreferrer"
                     target="_blank"
                   >
+                  <ViewCode />
                     CODE
                   </Link>
                 </StyledButton>
                 <StyledButton disabled={!project!.demoLink}>
-                  <DemoIcon />
                   <Link
                     href={project!.demoLink}
                     rel="noopener noreferrer"
                     target="_blank"
                   >
+                  <DemoIcon />
                     DEMO
                   </Link>
                 </StyledButton>
