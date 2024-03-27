@@ -3,11 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev -p 3040",
+    "dev": "set NODE_OPTIONS=--openssl-legacy-provider && next dev -p 3040",
     "build": "next build",
     "start": "next start",
     "lint": "eslint src/**/*.*",
-    "gen": "graphql-codegen --config codegen.yml"
+    "gen": "graphql-codegen --config codegen.yml",
+    "clear": "next lint --no-cache"
   },
   "dependencies": {
     "@types/react-transition-group": "^4.4.2",
@@ -40,7 +41,7 @@
     "babel-plugin-module-resolver": "^4.1.0",
     "babel-plugin-styled-components": "^1.12.0",
     "eslint": "^7.32.0",
-    "eslint-config-next": "^11.1.0",
+    "eslint-config-next": "^11.1.3",
     "eslint-config-standard": "^16.0.3",
     "eslint-plugin-import": "^2.24.2",
     "eslint-plugin-node": "^11.1.0",
