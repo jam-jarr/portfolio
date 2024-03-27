@@ -179,3 +179,11 @@ export const StyledButton = styled.button`
     color: rgba(16, 16, 16, 0.3);
   }
 `;
+
+export const Title = styled.h1`
+  
+  @media (min-width: 1100px) {
+    display: flex;
+    padding-right: 50px;
+  }
+`;

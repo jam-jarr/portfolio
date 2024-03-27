@@ -15,6 +15,7 @@ import {
   Thumbnail,
   Link,
   StyledScrollBars,
+  Title,
 } from './styles';
 import closeIcon from 'assets/icons/close.svg';
 import ViewCode from 'components/ui/Icons/ViewCode';
@@ -100,7 +101,7 @@ const ProjectModal = ({ project, onHide, show }: ModalProps) => {
           >
             <DetailsWrapper>
               <Details>
-                <h1>{project!.title}</h1>
+                <Title>{project!.title}</Title>
                 <Tags>
                   {project!.tags.map((tag, index) => (
                     <Tag key={index}>
