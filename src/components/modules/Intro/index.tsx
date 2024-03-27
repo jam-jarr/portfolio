@@ -7,7 +7,7 @@ const Intro = () => {
     <Wrapper>
       <IntroWrapper as={Container}>
         <Details>
-          <h1>I’m Gabe and I’m a Software Developer!</h1>
+          <h1>Jamie, Software Developer</h1>
           <Buttons>
             <Link href="/projects" passHref>
               <FlexButton as="a">View Projects</FlexButton>

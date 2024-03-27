@@ -11,19 +11,15 @@ const Footer = () => (
   <Wrapper>
     <Details>
       <Flex>
-        <FooterItem>
-          © {new Date().getFullYear()} | Gabriel Giarratana | All Rights
-          Reserved.
-        </FooterItem>
         <FooterContact>
           <FooterItem>
             Email:&nbsp;
             <Contacts
-              href="mailto:gabriel.giarratana@gmail.com"
+              href="mailto:jamie.giarratana@gmail.com"
               rel="noopener noreferrer"
               target="_blank"
             >
-              gabriel.giarratana@gmail.com
+              jamie.giarratana@gmail.com
             </Contacts>
           </FooterItem>
           <FooterItem>

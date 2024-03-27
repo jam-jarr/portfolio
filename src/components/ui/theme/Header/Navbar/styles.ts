@@ -10,6 +10,6 @@ export const Wrapper = styled.div`
 export const Brand = styled.a`
   color: #fff;
   height: 45px;
-  width: 45px;
+  width: 75px;
   position: relative;
 `;
